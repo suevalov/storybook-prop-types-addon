@@ -1,0 +1,45 @@
+{
+  "name": "storybook-prop-types-addon",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel src --ignore src/__tests__,src/__mocks__ --out-dir dist -s"
+  },
+  "files": [
+    "package.json",
+    "register.js",
+    "dist"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/standalone": "^7.0.0",
+    "@contentful/forma-36-tokens": "0.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addons": "^5.0.0",
+    "@storybook/components": "^5.0.0",
+    "@storybook/react": "^5.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.3",
+    "babel-plugin-codegen": "^3.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "rimraf": "^2.6.2"
+  },
+  "peerDependencies": {
+    "@storybook/addons": "^5",
+    "@storybook/components": "^5",
+    "@storybook/react": "^5",
+    "react": "^16"
+  },
+  "keywords": [
+    "storybook",
+    "addon",
+    "react"
+  ]
+}
