@@ -38,7 +38,7 @@ const TableComponent = ({ propDefinitions, name }) => {
       return (
         <tr key={name}>
           <td>
-            {name} {required ? <strong>(required)</strong> : null}
+            {name} {(required && !defaultValue) ? <strong>(required)</strong> : null}
           </td>
           <td>{defaultValue ? defaultValue.value : ''}</td>
           <td>{type.name}</td>
