@@ -38,12 +38,16 @@ export default class PropTypesPanel extends React.Component {
       return <EmptyState />;
     }
 
-    return types.map((type, i) => (
-      <PropTypesTable
-        key={i}
-        name={type.displayName}
-        propDefinitions={_.values(type.props)}
-      />
-    ));
+    return (
+      <div>
+        {types.map((type, i) => (
+          <PropTypesTable
+            key={i}
+            name={type.displayName}
+            propDefinitions={_.values(type.props)}
+          />
+        ))}
+      </div>
+    );
   }
 }
