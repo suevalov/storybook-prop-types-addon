@@ -1,6 +1,6 @@
 {
   "name": "storybook-prop-types-addon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
